@@ -1,0 +1,44 @@
+.movie-list {
+  margin: 40px 0;
+}
+
+.movie-list h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.listTitile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+.listTitile h2{
+    margin: 0.6rem 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.listTitile > p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+}
+.lightblue{
+    background-color: #5FBDFF;
+    padding: 0.6rem  0.6rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+.lightgrey{
+    background-color: #2C3237;
+    padding: 0.6rem  0.6rem;
+    border-radius: 5px;
+    color: #fff;
+}

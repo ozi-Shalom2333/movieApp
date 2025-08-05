@@ -1,0 +1,102 @@
+.movie-card {
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+.movie-card:hover .movie-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.movie-title {
+  font-size: 1.2em;
+  margin: 0 0 5px;
+  font-weight:400;
+}
+
+.movie-details {
+  font-size: 0.7em;
+  margin: 2px 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.sided{
+    display: flex;
+    gap: 1rem;
+}
+.genre{
+    border: 1px solid #fff;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(95, 189, 255, 0.7);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .play-button {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .movie-card {
+    width: 150px;
+    height: 225px;
+  }
+
+  .movie-title {
+    font-size: 1em;
+  }
+
+  .movie-details {
+    font-size: 0.8em;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
