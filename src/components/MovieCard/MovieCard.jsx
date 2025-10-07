@@ -2,7 +2,7 @@ import './MovieCard.css';
 import { FaPlay } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 
-function MovieCard({ movie }) {
+const MovieCard = ({ movie }) => {
   return (
     <div className="movie-card" style={{ backgroundImage: `url(${movie.image})` }}>
       <div className="movie-overlay">

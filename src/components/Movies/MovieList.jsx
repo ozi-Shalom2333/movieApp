@@ -4,7 +4,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { LuTvMinimalPlay } from "react-icons/lu";
 
 
-function MovieList({ movies, title }) {
+const MovieList =({ movies, title }) => {
   return (
     <div className="movie-list">
       <div className='listTitile'>

@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    padding: 2rem;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerA{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+.headerA h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.headerA > div{
+    display: flex;
+    gap: 1.3rem;
+}
+.search{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    background-color: #3c3d3b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
